@@ -52,6 +52,12 @@
 };
 
 &i2c2 {
+	bh1770: bh1770@38 {
+		compatible = "rohm,bh1770glc";
+		reg = <0x38>;
+		interrupts-extended = <&gpio3 19 IRQ_TYPE_LEVEL_HIGH>;
+	}
+
 	smia_1: camera@10 {
 		compatible = "nokia,smia";
 		reg = <0x10>;
