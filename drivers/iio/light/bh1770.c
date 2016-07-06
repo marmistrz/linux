@@ -11,11 +11,13 @@
 static int bh1770_probe(struct i2c_client *client,
 			const struct i2c_device_id *id)
 {
+    printk("BH1770 initialized\n");
     return 0;
 }
 
 static int bh1770_remove(struct i2c_client *client)
 {
+    printk("BH1770 removed\n");
     return 0;
 }
 
